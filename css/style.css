@@ -1,0 +1,66 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	/* 可视化的高度 */
+	min-height: 100vh;
+	/* 弹性布局 */
+	display: flex;
+	/* 水平居中 */
+	justify-content: center;
+	/* 垂直居中 */
+	align-items: center;
+	/* 渐变色 */
+	background-image: url("../img/big_background.jpg");
+}
+
+.containe {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.star {
+	position: relative;
+	display: flex;
+}
+
+.star span {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: #e9e684;
+	margin: 0px 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #e9e681;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(125s/var(--i));
+}
+.star span:nth-child(even) {
+	background: #a6caff;
+	box-shadow: 0 0 0 10px #b3c4ff;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(125s/var(--i));
+}
+.star span:nth-last-child(even) {
+	background: #e9e684;
+	box-shadow: 0 0 0 10px #e9e681;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(125s/var(--i));
+}
+
+
+@keyframes animate{
+	0%
+	{
+		transform: translatey(160vh) scale(0);
+	}
+	100%
+	{
+		transform: translatex(-10vh) scale(0.5);
+	}
+}

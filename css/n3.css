@@ -1,0 +1,166 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("../img/nd.jpg");
+	background-size: 120%;
+	/* background-attachment: fixed; */
+	background-repeat: no-repeat;
+	position: relative;
+	/* 文本 */
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	height: 100%;
+	weight: 100% font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.containner {
+	width: 120%;
+	height: 1500px;
+	/* border: 2px solid green; */
+	position: absolute;
+	background: rgba(0, 0, 0, 0.7);
+
+}
+
+.topBox {
+	width: 1550px;
+	height: 125px;
+	padding: 70px 0;
+	/* border: 2px solid red; */
+	position: absolute;
+	/* margin: auto; */
+	left: 100px;
+}
+
+.topBox .logo {
+	position: absolute;
+	height: 120px;
+}
+
+.topBox .logo img {
+	position: absolute;
+	width: 400px;
+	height: 120px;
+	/* 	border: 2px solid blue; */
+	/* margin-top: 0px; */
+	transition: all 2s 1s ease;
+	cursor: pointer;
+}
+
+.logo img:hover {
+	transform: scale(1.2, 1.2)
+}
+
+.topBox .topText {
+	position: absolute;
+	left: 890px;
+	width: 850px;
+	height: 148px;
+	/* border: 2px solid orangered; */
+	margin: -10px;
+}
+
+.left {
+	width: 700px;
+	height: 700px;
+	/* border: 2px pink solid; */
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 200px;
+}
+
+.ipad {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	bottom: 0;
+	left: 160px;
+}
+
+.cup1 {
+	position: absolute;
+	width: 109px;
+	top: 95px;
+	left: 421px;
+}
+
+.cup2 {
+	position: absolute;
+	width: 295px;
+	bottom: -3px;
+	left: 84px;
+}
+
+.peo1 {
+	width: 187px;
+	margin-top: 3px;
+	margin-left: 211px;
+}
+
+.peo2 {
+	position: absolute;
+	bottom: 45px;
+	width: 332px;
+	right: -4px;
+}
+
+.right {
+	width: 700px;
+	height: 700px;
+	/* border: 2px pink solid; */
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 1200px;
+}
+
+.right h3 {
+	color: #f7bdb2;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.toprignt {
+	/* border: 2px solid pink; */
+	width: 650px;
+	height: 50px;
+	line-height: 30px;
+	/* float: right; */
+}
+
+.topBox .topright1 img {
+	width: 60px;
+	height: 60px;
+	margin-left: 35px;
+
+}
+
+.topright1:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.topright2 a {
+	font-size: 16px;
+	color: #c1c1c1;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.topright2 a:hover {
+	color: #ffffff;
+}
+
+.topright2 span {
+	color: #c1c1c1;
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(50px);
+}

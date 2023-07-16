@@ -1,0 +1,188 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("../img/nd.jpg");
+	/* background-attachment: fixed; */
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.smallBox {
+	/* border: 2px solid pink; */
+	width: 100%;
+	height: 800px;
+	margin-top: 200px;
+}
+
+.left {
+	/* border: 2px solid pink; */
+	width: 840px;
+	height: 795px;
+
+	float: left;
+}
+
+.right {
+	/* border: 2px solid pink; */
+	width: 620px;
+	height: 795px;
+
+	float: right;
+}
+
+.containner {
+	width: 100%;
+	height: 1110px;
+	/* border: 2px solid green; */
+	position: absolute;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.topBox {
+	width: 1550px;
+	height: 125px;
+	padding: 70px 0;
+	/* border: 2px solid red; */
+	position: absolute;
+	/* margin: auto; */
+	left: 100px;
+}
+
+.topBox .logo {
+	position: absolute;
+	height: 120px;
+}
+
+.topBox .logo img {
+	position: absolute;
+	width: 400px;
+	height: 120px;
+	/* 	border: 2px solid blue; */
+	/* margin-top: 0px; */
+	transition: all 2s 1s ease;
+	cursor: pointer;
+}
+
+.logo img:hover {
+	transform: scale(1.2, 1.2)
+}
+
+.topBox .topText {
+	position: absolute;
+	left: 890px;
+	width: 800px;
+	height: 80px;
+	/* border: 2px solid orangered; */
+
+
+}
+
+.fontStyle {
+	color: aliceblue;
+	font-size: 20px;
+	line-height: 40px;
+
+}
+
+.gaishu {
+	color: #f7bdb2;
+	font-size: 50px;
+
+}
+
+.huyu {
+	color: #f7bdb2;
+	font-size: 70px;
+	font-weight: 700;
+}
+
+#p1 {
+	margin: -151px 10px 10px 200px;
+}
+
+#p1 img {
+	width: 730px;
+	height: 560px;
+	position: absolute;
+}
+
+#p2 {
+	margin: 70px 10px 10px 50px;
+}
+
+#p2 img {
+	width: 300px;
+	height: 500px;
+}
+
+#p3 {
+	/* border: 3px solid rebeccapurple; */
+	width: 165px;
+	height: 220px;
+	margin-left: 500px;
+	margin-top: -686px;
+}
+
+#p3 img {
+	width: 165px;
+	height: 220px;
+}
+
+#p4 {
+	width: 165px;
+	height: 220px;
+	/* border: 3px solid rebeccapurple; */
+	margin: -140px 10px 10px 700px;
+}
+
+#p4 img {
+	width: 165px;
+	height: 220px;
+	position: absolute;
+}
+
+
+
+/* haha */
+.toprignt {
+	/* border: 2px solid pink; */
+	width: 650px;
+	height: 50px;
+	line-height: 30px;
+	/* float: right; */
+}
+
+.topBox .topright1 img {
+	width: 60px;
+	height: 60px;
+	margin-left: 35px;
+
+}
+
+.topright1:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.topright2 a {
+	font-size: 16px;
+	color: #c1c1c1;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.topright2 a:hover {
+	color: #ffffff;
+}
+
+.topright2 span {
+	color: #c1c1c1;
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(50px);
+}

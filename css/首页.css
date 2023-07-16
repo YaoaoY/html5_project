@@ -1,0 +1,407 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	min-height: 100vh;
+	background-image: url("../img/big_background.jpg");
+	/* background-attachment: fixed; */
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.containner {
+	width: 100%;
+	height: 1100px;
+	/* 	border: 2px solid green; */
+	position: absolute;
+}
+
+.topBox {
+	width: 1550px;
+	height: 125px;
+	padding: 65px 0;
+	/* 	border: 2px solid red; */
+	position: absolute;
+	/* margin: auto; */
+	left: 100px;
+}
+
+.topBox .logo {
+	position: absolute;
+	height: 120px;
+}
+
+.topBox .logo img {
+	position: absolute;
+	width: 400px;
+	height: 120px;
+	/* 	border: 2px solid blue; */
+	/* margin-top: 0px; */
+	cursor: pointer;
+}
+
+.topBox .topText {
+	position: absolute;
+	left: 830px;
+	width: 800px;
+	height: 80px;
+	/* 	border: 2px solid orangered; */
+
+}
+
+.cloud {
+	background: url("../img/cloud.png") repeat-x;
+	position: absolute;
+	/* background-size: cover; */
+	top: 50px;
+	width: 100%;
+	height: 390px;
+	/* z-index: 20px; */
+	background-position: 0px 0px;
+}
+
+/* 
+.cloud img {
+	width: 100%;
+	height: 220px;
+} */
+
+.lake {
+	background: url("../img/lake.png") no-repeat;
+	/* position: fixed; */
+	background-size: cover;
+	background-position: center top;
+	position: absolute;
+	overflow: hidden;
+	top: 45%;
+	/* border: 2px solid rebeccapurple; */
+	width: 100%;
+	height: 600px;
+	bottom: 0px;
+}
+
+.innerBox {
+	/* 小船做背景 */
+	background: url("../img/boat.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	z-index: 9;
+	top: 5%;
+	left: 35%;
+	width: 650px;
+	height: 650px;
+	/* border: 2px solid yellow; */
+	z-index: 800px;
+	transition: all 1.7s linear;
+	transform: rotate(0deg);
+}
+
+.innerBox .ptop {
+	position: absolute;
+	top: -45px;
+	left: 250px;
+	max-width: 250px;
+	z-index: 900px;
+}
+
+.innerBox .pbottom {
+	position: absolute;
+	top: 166px;
+	max-width: 245px;
+	left: 230px;
+	z-index: 900px;
+}
+
+.innerBox .pleft {
+	position: absolute;
+	top: 140px;
+	max-width: 245px;
+	left: -10px;
+	z-index: 900px
+}
+
+.innerBox .pright {
+	position: absolute;
+	top: 78px;
+	max-width: 245px;
+	left: 450px;
+	z-index: 900px;
+}
+
+.reflect {
+	position: absolute;
+	top: 445px;
+	left: 245px;
+	max-width: 2000px;
+}
+
+
+.bottomBox {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 250px;
+	/* background-color: rgba(199, 236, 238, 0.2); */
+
+	/* border: 5px red solid; */
+	/* border: 2px solid yellowgreen; */
+}
+
+
+.bottomBox .conbox {
+	/* position: absolute; */
+	position: relative;
+
+	top: 0px;
+	width: 400px;
+	height: 250px;
+	display: inline-block;
+	float: left;
+	padding-right: 22px;
+	padding-left: 22px;
+	/* border: 2px solid skyblue; */
+	cursor: pointer;
+}
+
+.conbox img {
+	position: absolute;
+	bottom: 10px;
+	max-width: 400px;
+	/* float: left; */
+	transition: all 2s;
+}
+
+.conbox img:hover {
+	transform: scale(1.2, 1.2)
+}
+
+.ptop:hover,
+.pbottom:hover,
+.pleft:hover,
+.pright:hover {
+	opacity: 0.8;
+}
+
+/* 存放孩子的介绍 */
+
+.tri1 {
+	width: 30px;
+	height: 30px;
+	background-color: aliceblue;
+	opacity: 0.6;
+	margin: -8px auto;
+	transform: rotate(45deg);
+	margin-left: -33px;
+	margin-top: 190px;
+	z-index: 9998;
+	/* display: none; */
+}
+
+
+.intro1 {
+
+	background: aliceblue;
+	color: black;
+	width: 300px;
+	height: 400px;
+	text-align: left;
+	padding: 20px;
+	font-size: 12px;
+	border-radius: 2.25rem;
+	position: absolute;
+	opacity: 0.8;
+	left: 445px;
+	top: -50px;
+	z-index: 9999;
+	display: none;
+}
+
+.intro3 {
+
+	background: aliceblue;
+	color: black;
+	width: 300px;
+	height: 400px;
+	text-align: left;
+	padding: 20px;
+	font-size: 12px;
+	border-radius: 2.25rem;
+	position: absolute;
+	opacity: 0.8;
+	left: 250px;
+	top: -2px;
+	z-index: 9999;
+	display: none;
+}
+
+
+.tri2 {
+
+	width: 30px;
+	height: 30px;
+	background-color: aliceblue;
+	opacity: 0.6;
+	margin: -8px auto;
+	transform: rotate(45deg);
+	margin-left: -33px;
+	margin-top: 190px;
+	z-index: 9998;
+	/* display: none; */
+}
+
+.intro2 {
+
+	background: aliceblue;
+	color: black;
+	width: 300px;
+	height: 400px;
+	text-align: left;
+	padding: 20px;
+	font-size: 12px;
+	border-radius: 2.25rem;
+	position: absolute;
+	opacity: 0.8;
+	left: 450px;
+	top: 30px;
+	z-index: 9999;
+	display: none;
+}
+
+.tri4 {
+
+	width: 30px;
+	height: 30px;
+	background-color: aliceblue;
+	opacity: 0.6;
+	margin: -8px auto;
+	transform: rotate(45deg);
+	margin-left: -33px;
+	margin-top: 190px;
+	z-index: 9998;
+	/* display: none; */
+}
+
+.intro4 {
+
+	background: aliceblue;
+	color: black;
+	width: 300px;
+	height: 400px;
+	text-align: left;
+	padding: 20px;
+	font-size: 12px;
+	border-radius: 2.25rem;
+	position: absolute;
+	opacity: 0.8;
+	left: 705px;
+	top: 0px;
+	z-index: 9999;
+	display: none;
+}
+
+.pDiv {
+	position: absolute;
+	top: 100px;
+	left: 25px;
+}
+
+h3 {
+	position: absolute;
+	color: #e05948;
+	font-size: 40px;
+	margin: -210px 10px 5px;
+}
+
+h1 {
+	position: absolute;
+	color: #e05948;
+	font-size: 40px;
+}
+
+p {
+	font-size: 18px;
+	margin: 0px 0px 15px;
+}
+
+.toprignt {
+	line-height: 30px;
+	margin: 10px 0px 10px 150px;
+
+}
+
+
+.topBox .topright1 img {
+	width: 60px;
+	height: 60px;
+	margin-left: 35px;
+	/* margin: 10px 10px 10px 150px; */
+}
+
+.topright1:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.topright2 a {
+	font-size: 10px;
+	color: #f9f9f9;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.topright2 a:hover {
+	color: #ffffff;
+}
+
+.topright2 span {
+	color: #c1c1c1;
+}
+
+
+
+.containe {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.star {
+	position: relative;
+	display: flex;
+}
+
+.star span {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: #e9e684;
+	margin: 0px 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #e9e681;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(125s/var(--i));
+}
+
+.star span:nth-child(even) {
+	background: #a6caff;
+	box-shadow: 0 0 0 10px #b3c4ff,
+		0 0 50px #a6caff,
+		0 0 100px #b3c4ff;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(125s/var(--i));
+}
+
+
+@keyframes animate {
+	0% {
+		transform: translatey(90vh) scale(0);
+	}
+
+	100% {
+		transform: translatex(-10vh) scale(0.4);
+	}
+}
